@@ -52,6 +52,14 @@ body {
   padding: 0px 20px;
 }
 
+.suited {
+  font-family: 'Ranga', cursive;
+}
+
+.computed {
+  font-family: "Lato", sans-serif;
+}
+
 #central {
   color: rgb(200, 222, 222);
   background-color: rgb(5, 92, 92);
