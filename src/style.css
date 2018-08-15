@@ -286,6 +286,7 @@ body {
 
 .fcc {
   transition: transform 0.8s;
+  background-position: center;
   background-image: url(https://uploads.codesandbox.io/uploads/user/29320134-d08b-4220-825b-6932396f6ed3/VQlf-freecodecamp.jpg);
 }
 
@@ -295,6 +296,7 @@ body {
 
 .gh {
   transition: transform 0.8s;
+  background-position: center;
   background-image: url(https://uploads.codesandbox.io/uploads/user/29320134-d08b-4220-825b-6932396f6ed3/i4fq-GitHub.jpg);
 }
 
@@ -316,20 +318,25 @@ body {
   justify-content: space-around;
 }
 
-.flip-container {
+.flip-cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  perspective: 800px;
+  align-items: space-between;
+  justify-content: center;
+  margin: 20px;
+  padding: 10px;
+}
+
+.flip-container {
+  perspective: 1000px;
 }
 
 .flip-container,
 .front,
 .back {
-  max-width: 320px;
-  max-height: 480px;
+  width: calc(120px + 40px + 40px);
+  height: calc(200px + 40px + 40px);
 }
 
 .card {
@@ -337,40 +344,51 @@ body {
   padding: 20px;
   width: 120px;
   height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
   border: solid rgba(0, 222, 222, 0.8) 6px;
   cursor: help;
-  position: relative;
+
+  transition: 1.5s;
   transform-style: preserve-3d;
-  -webkit-transition: transform 1.5s;
+
+  position: relative;
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.front h5 {
+  font-size: 18px;
+  margin-top: 0px;
 }
 
 .front {
-  position: absolute;
-  height: 100%;
-  width: 100%;
   background-color: #cc3333;
-  text-align: center;
-
-  -webkit-backface-visibility: hidden;
+  z-index: 2;
+  transform: rotateY(0deg);
 }
 
 .back {
-  position: absolute;
-  height: 100%;
-  width: 100%;
   background-color: #999999;
-
-  -webkit-transform: rotateY(-180deg);
-  -webkit-backface-visibility: hidden;
-
-  color: #fff;
-  text-align: center;
+  transform: rotateY(-180deg);
 }
 
-.card:hover {
-  -webkit-transform: rotateY(-180deg);
+.flip-container:hover .card {
+  transform: rotateY(-180deg);
+}
+
+.flip-container.hover .card {
+  transform: rotateY(-180deg);
 }
