@@ -168,7 +168,7 @@ body {
   font-size: 20px;
 }
 
-.text {
+.text.history {
   grid-area: left;
 }
 
@@ -179,15 +179,6 @@ body {
 
 .timeline {
   grid-area: right;
-}
-
-.tape {
-  z-index: 2;
-}
-
-.baby {
-  border-radius: 50%;
-  z-index: 1;
 }
 
 #code.section {
