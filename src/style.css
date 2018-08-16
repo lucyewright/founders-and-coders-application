@@ -10,8 +10,8 @@ font-family: 'Rajdhani', sans-serif;
 font-family: "Lato", sans-serif; */
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 18px;
   padding: 0;
   margin: 0;
   background-color: rgb(3, 22, 22);
@@ -27,8 +27,6 @@ body {
   flex-direction: row;
   position: fixed;
   z-index: 1;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
   width: 100%;
   height: 80px;
   margin-top: 0px;
@@ -37,27 +35,30 @@ body {
 }
 
 .name {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Megrim", cursive;
   font-style: italic;
   font-size: 30px;
   padding: 0px 20px;
 }
 
 .theme {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-style: italic;
   font-size: 25px;
   padding: 0px 20px;
+  margin: 10px 10px 0px 10px;
 }
 
 .suited {
-  font-family: 'Ranga', cursive;
+  font-family: "Bad Script", cursive;
+  font-size: 28px;
+}
+
+.and {
+  font-family: "Megrim", cursive;
 }
 
 .computed {
-  font-family: "Lato", sans-serif;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 28px;
 }
 
 #central {
@@ -151,6 +152,11 @@ body {
   right: -19px;
 }
 
+.title {
+  font-family: "Megrim", cursive;
+  font-size: 22px;
+}
+
 #history.section {
   display: grid;
   grid-template-columns: auto 30px;
@@ -182,13 +188,6 @@ body {
 #code.section {
   margin: 20px;
   padding: 20px;
-}
-
-.title.code {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 20px;
-  margin: 0;
 }
 
 #founders.section {
@@ -246,6 +245,10 @@ body {
   100% {
     top: 0px;
   }
+}
+
+.smiley {
+  padding-top: 5px;
 }
 
 .input.founders {
@@ -375,6 +378,9 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Iceberg", cursive;
 }
 
 .front h5 {
@@ -382,15 +388,21 @@ body {
   margin-top: 0px;
 }
 
+.front > span {
+  padding: 0px 8px;
+}
+
 .front {
-  background-color: #cc3333;
+  background-color: rgb(205, 255, 255);
   z-index: 2;
   transform: rotateY(0deg);
+  color: rgb(0, 45, 45);
 }
 
 .back {
-  background-color: #999999;
+  background-color: rgb(255, 230, 195);
   transform: rotateY(-180deg);
+  color: rgb(182, 106, 0);
 }
 
 .flip-container:hover .card {
@@ -399,4 +411,104 @@ body {
 
 .flip-container.hover .card {
   transform: rotateY(-180deg);
+}
+
+.front.music {
+  background-size: 80% 45px;
+  background-position-x: 50%;
+  background-position-y: 36%;
+  background-repeat: no-repeat;
+  background-image: url("https://uploads.codesandbox.io/uploads/user/29320134-d08b-4220-825b-6932396f6ed3/ZsUL-music_notes.png");
+}
+
+.back.music {
+  background-image: url("https://uploads.codesandbox.io/uploads/user/29320134-d08b-4220-825b-6932396f6ed3/TT83-bass.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 26px;
+}
+
+.front.fear {
+  background-size: 54%;
+  background-image: url("https://uploads.codesandbox.io/uploads/user/29320134-d08b-4220-825b-6932396f6ed3/gXwF-scared-face.png");
+  background-position-x: 50%;
+  background-position-y: 44%;
+  background-repeat: no-repeat;
+}
+
+.back.fear {
+  background-image: url("https://uploads.codesandbox.io/uploads/user/29320134-d08b-4220-825b-6932396f6ed3/zhFi-spider.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 30px;
+  color: rgb(255, 0, 45);
+}
+
+.front.travel {
+  background-image: url("https://uploads.codesandbox.io/uploads/user/29320134-d08b-4220-825b-6932396f6ed3/4-y9-paper_plane.png");
+  background-size: 56% 38px;
+  background-position-x: 50%;
+  background-position-y: 38%;
+  background-repeat: no-repeat;
+}
+
+.back.travel {
+  background-image: url("https://uploads.codesandbox.io/uploads/user/29320134-d08b-4220-825b-6932396f6ed3/o_DC-Flag_Map_Of_New_Zealand.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 26px;
+}
+
+.front.sport {
+  background-image: url("https://uploads.codesandbox.io/uploads/user/29320134-d08b-4220-825b-6932396f6ed3/r4XR-sports-image-tablet.png");
+  background-size: 100%;
+  background-position-x: 50%;
+  background-position-y: 44%;
+  background-repeat: no-repeat;
+}
+
+.back.sport {
+  background-image: url("https://uploads.codesandbox.io/uploads/user/29320134-d08b-4220-825b-6932396f6ed3/EPQf-Gymnast_vectorized.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 26px;
+  color: rgb(255, 150, 0);
+}
+
+.front.grow {
+  background-image: url("https://uploads.codesandbox.io/uploads/user/29320134-d08b-4220-825b-6932396f6ed3/3nIF-map-uk-regions.png");
+  background-size: 60%;
+  background-position-x: 50%;
+  background-position-y: 44%;
+  background-repeat: no-repeat;
+}
+
+.back.grow {
+  background-image: url("https://uploads.codesandbox.io/uploads/user/29320134-d08b-4220-825b-6932396f6ed3/2zv9-IMG_20160919_161428.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 26px;
+  color: rgb(255, 170, 50);
+}
+
+.front.football {
+  background-image: url("https://uploads.codesandbox.io/uploads/user/29320134-d08b-4220-825b-6932396f6ed3/j9u3-football.png");
+  background-size: 30%;
+  background-position-x: 50%;
+  background-position-y: 40%;
+  background-repeat: no-repeat;
+}
+
+.back.football {
+  background-image: url("https://uploads.codesandbox.io/uploads/user/29320134-d08b-4220-825b-6932396f6ed3/b8ed-wba-shine-crest.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 26px;
+  color: red;
 }
