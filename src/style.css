@@ -159,7 +159,7 @@ body {
 
 #history.section {
   display: grid;
-  grid-template-columns: auto 30px;
+  grid-template-columns: 4fr 1fr;
   grid-template-areas:
     "top top"
     "left right";
@@ -172,7 +172,7 @@ body {
   font-size: 20px;
 }
 
-.text {
+.text.history {
   grid-area: left;
 }
 
@@ -183,6 +183,15 @@ body {
 
 .timeline {
   grid-area: right;
+}
+
+.tape {
+  z-index: 2;
+}
+
+.baby {
+  border-radius: 50%;
+  z-index: 1;
 }
 
 #code.section {
