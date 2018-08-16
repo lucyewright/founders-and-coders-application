@@ -155,7 +155,7 @@ body {
 
 #history.section {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 4fr 1fr;
   grid-template-areas:
     "top top"
     "left right";
@@ -168,7 +168,7 @@ body {
   font-size: 20px;
 }
 
-.text.history {
+.text {
   grid-area: left;
 }
 
